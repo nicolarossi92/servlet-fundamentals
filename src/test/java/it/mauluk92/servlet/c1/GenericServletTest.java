@@ -34,7 +34,7 @@ public class GenericServletTest {
      * <ul>
      *     <li>
      *         Assign the {@link ServletConfig} in the {@code init} method to a class level
-     *         variable so that it can be retrieved by calling {@lcode getServletConfig}.
+     *         variable so that it can be retrieved by calling {@code getServletConfig}.
      *     </li>
      *     <li>
      *         Provide default implementations of all methods in the {@link Servlet} interface.
