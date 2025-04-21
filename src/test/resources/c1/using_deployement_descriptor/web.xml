@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <context-param>
+        <param-name>Hello</param-name>
+        <param-value>World</param-value>
+    </context-param>
+
+    <servlet>
+        <servlet-name>MyServlet</servlet-name>
+        <servlet-class>it.mauluk92.servlet.c1.utils.MyServlet</servlet-class>
+        <load-on-startup>10</load-on-startup>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>MyServlet</servlet-name>
+        <url-pattern>/my</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>MyHttpServlet</servlet-name>
+        <servlet-class>it.mauluk92.servlet.c1.utils.MyHttpServlet</servlet-class>
+        <load-on-startup>20</load-on-startup>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>MyHttpServlet</servlet-name>
+        <url-pattern>/myHttp</url-pattern>
+    </servlet-mapping>
+</web-app>
